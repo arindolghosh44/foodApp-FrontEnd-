@@ -5,35 +5,7 @@ import axios from 'axios'
 function FoodReport() {
     let [user, setUser] = useState([]);
 
-   /* const filterData=(event)=>{
-
-        if(event.target.value==='male'){
-            setUser(
-
-                    data.filter((ele,idx)=>{
-                        return ele.gender==='male'
-                    })
-
-            )
-        }
-        else if(event.target.value==='female'){
-
-
-            setUser(
-
-                data.filter((ele,idx)=>{
-                    return ele.gender==='female'
-                })
-
-        )
-        }
-
-
-        else{
-            setUser(data);
-        }
-
-    }*/
+  
     useEffect(()=>{
         axios.get("http://localhost:8900/food/get")
         .then((res)=>{
@@ -46,18 +18,7 @@ function FoodReport() {
            alert("Something wrong with geting the Data");
         })
     },[])
-  /*  const getData=()=>{
-     axios.get("https://randomuser.me/api/?results=20")
-     .then((res)=>{
-        console.log(res.data.results);
-        setUser(res.data.results);
-        setdata(res.data.results);
-     })
-     .catch((error)=>{
-        console.log(error);
-        alert("Something wrong with tuhin");
-     })
-    }*/
+ 
   return (
     <div>
    <h2>Food Order Infromation</h2>

@@ -9,6 +9,7 @@ function Nav() {
       </div>
       <div className='navRContainer'>
        <a href="/food">FOOD</a>
+        
        <a href="/addorder">Contact Us</a>
       </div>
     </div>
